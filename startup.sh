@@ -1,8 +1,8 @@
 # name this file as "startup.sh" and call it from "startup command" as "/home/startup.sh"
 # check out my YouTube video "https://youtu.be/-PGhVFsOnGA"
-cp /home/default /etc/nginx/sites-enabled/default
+# cp /home/default /etc/nginx/sites-enabled/default
 
-cp /home/php.ini /usr/local/etc/php/conf.d/php.ini
+# cp /home/php.ini /usr/local/etc/php/conf.d/php.ini
 
 
 # install support for webp file conversion
@@ -25,7 +25,7 @@ service supervisor restart
 
 php /home/site/wwwroot/artisan down --refresh=15 --secret="1630542a-246b-4b66-afa1-dd72a4c43515"
 
-php /home/site/wwwroot/artisan migrate --force
+# php /home/site/wwwroot/artisan migrate --force
 
 # Clear caches
 php /home/site/wwwroot/artisan cache:clear
