@@ -51,6 +51,8 @@ php /home/site/wwwroot/artisan view:cache
 # uncomment next line if you dont have S3 or Blob storage
 #php /home/site/wwwroot/artisan storage:link
 
+php /home/site/wwwroot/artisan key:generate
+
 # Turn off maintenance mode
 php /home/site/wwwroot/artisan up
 
