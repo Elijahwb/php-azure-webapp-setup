@@ -25,13 +25,14 @@ service supervisor restart
 
 php /home/site/wwwroot/artisan down --refresh=15 --secret="1630542a-246b-4b66-afa1-dd72a4c43515"
 
-# php /home/site/wwwroot/artisan migrate --force
+php /home/site/wwwroot/artisan migrate --force
 
 # Clear caches
 php /home/site/wwwroot/artisan cache:clear
 
 # Clear expired password reset tokens
 #php /home/site/wwwroot/artisan auth:clear-resets
+php /home/site/wwwroot/artisan key:generate
 
 # Clear and cache routes
 php /home/site/wwwroot/artisan route:cache
@@ -50,8 +51,6 @@ php /home/site/wwwroot/artisan view:cache
 
 # uncomment next line if you dont have S3 or Blob storage
 #php /home/site/wwwroot/artisan storage:link
-
-php /home/site/wwwroot/artisan key:generate
 
 # Turn off maintenance mode
 php /home/site/wwwroot/artisan up
