@@ -29,6 +29,11 @@ php /home/site/wwwroot/artisan migrate --force
 
 # Clear caches
 php /home/site/wwwroot/artisan cache:clear
+php /home/site/wwwroot/artisan optimize:clear
+
+php /home/site/wwwroot/artisan config:clear
+php /home/site/wwwroot/artisan route:clear
+php /home/site/wwwroot/artisan route:clear
 
 # Clear expired password reset tokens
 #php /home/site/wwwroot/artisan auth:clear-resets
