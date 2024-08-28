@@ -63,3 +63,6 @@ php /home/site/wwwroot/artisan up
 
 # run worker
 nohup php /home/site/wwwroot/artisan queue:work &
+
+# run scheduler
+nohup php /home/site/wwwroot/artisan schedule:work &
