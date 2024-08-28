@@ -17,7 +17,7 @@ docker-php-ext-install gd
 apt-get install -y supervisor 
 
 cp /home/laravel-worker.conf /etc/supervisor/conf.d/laravel-worker.conf
-cp /home/laravel-worker.conf /etc/supervisor/conf.d/laravel-scheduler.conf
+cp /home/laravel-scheduler.conf /etc/supervisor/conf.d/laravel-scheduler.conf
 
 # restart nginx
 service nginx restart
