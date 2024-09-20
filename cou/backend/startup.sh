@@ -39,6 +39,8 @@ php /home/site/wwwroot/artisan route:clear
 #php /home/site/wwwroot/artisan auth:clear-resets
 php /home/site/wwwroot/artisan key:generate
 
+php /home/site/wwwroot/artisan permissions:create-user-permissions
+
 # Clear and cache routes
 php /home/site/wwwroot/artisan route:cache
 
