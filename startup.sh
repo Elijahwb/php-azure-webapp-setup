@@ -43,6 +43,8 @@ php /home/site/wwwroot/artisan key:generate
 # Update the paynamics environment in the database
 php /home/site/wwwroot/artisan app:change-paynamic-environment
 
+php /home/site/wwwroot/artisan app:gps-seeder
+
 # Clear and cache routes
 php /home/site/wwwroot/artisan route:cache
 
