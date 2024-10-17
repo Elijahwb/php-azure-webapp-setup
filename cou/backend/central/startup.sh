@@ -3,6 +3,9 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+apt-get update
+apt-get install -y coreutils
+
 # Function to check if a command exists
 command_exists() {
     command -v "$1" >/dev/null 2>&1
