@@ -66,3 +66,8 @@ echo ""
 echo "Check app status"
 ./manageApp.sh status
 echo ""
+
+echo "Reconfigure nginx and restart it"
+cp /home/default /etc/nginx/sites-enabled/default
+nginx -t
+service nginx restart
