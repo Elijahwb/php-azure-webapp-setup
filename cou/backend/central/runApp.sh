@@ -23,7 +23,7 @@ export PORT=5000
 echo ""
 
 echo "Confirm PORT value is changed:"
-echo $PORT
+echo "Current port: $PORT"
 echo ""
 
 echo "Switch to the project folder:"
