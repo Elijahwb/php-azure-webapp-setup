@@ -1,5 +1,10 @@
 #!/bin/bash
 set -e  # Stop the script if any command fails
+source ~/.bashrc
+
+echo "Switch to the project folder:"
+cd /home/site/wwwroot || { echo "Directory not found"; exit 1; }
+echo ""
 
 # Verify installations
 echo "Check the Go version in the path:"
@@ -24,10 +29,6 @@ echo ""
 
 echo "Confirm PORT value is changed:"
 echo "Current port: $PORT"
-echo ""
-
-echo "Switch to the project folder:"
-cd /home/site/wwwroot || { echo "Directory not found"; exit 1; }
 echo ""
 
 echo "Remove the existing Go binary..."
