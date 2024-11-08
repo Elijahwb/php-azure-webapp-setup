@@ -3,6 +3,7 @@ server {
         #proxy_cache_valid 200 1s;
     listen 8080;
     listen [::]:8080;
+    client_max_body_size 1024M;  # Set this to 1024M for 1GB
     root /home/site/wwwroot/public;
     server_name  mywebapp.azurewebsites.net; 
     port_in_redirect off;
