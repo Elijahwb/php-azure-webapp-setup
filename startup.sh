@@ -19,6 +19,13 @@ apt-get install -y supervisor
 cp /home/laravel-worker.conf /etc/supervisor/conf.d/laravel-worker.conf
 cp /home/laravel-scheduler.conf /etc/supervisor/conf.d/laravel-scheduler.conf
 
+# Restart the php engine of the server
+echo "Restarting php-fpm..."
+pkill -o -USR2 php-fpm
+echo ""
+echo "php-fpm restarted"
+echo ""
+
 # restart nginx
 service nginx restart
 service supervisor restart
