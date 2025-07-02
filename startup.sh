@@ -61,6 +61,9 @@ php /home/site/wwwroot/artisan config:cache
 # Clear and cache views
 php /home/site/wwwroot/artisan view:cache
 
+# Clear and cache views
+php /home/site/wwwroot/artisan db:seed --class=DragonCredentials
+
 # Install node modules
 # npm ci
 
