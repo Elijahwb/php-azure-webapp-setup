@@ -45,7 +45,7 @@ php /home/site/wwwroot/artisan route:clear
 
 # Clear expired password reset tokens
 #php /home/site/wwwroot/artisan auth:clear-resets
-php /home/site/wwwroot/artisan key:generate
+# php /home/site/wwwroot/artisan key:generate
 
 # Update the paynamics environment in the database
 php /home/site/wwwroot/artisan app:change-paynamic-environment
